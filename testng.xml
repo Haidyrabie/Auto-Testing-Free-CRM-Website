@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="E:/Qc/automation/eclipse-workspace/Free-CRM">
+        <parameter name="browser" value="chrome"></parameter>
+
+        <classes>
+            <class name="Test_cases.Login_test">
+                <methods>
+                    <include name="titletest"/>
+                    <include name="urltest"/>
+                    <include name="Logotest"/>
+                    <include name="Logintest"/>
+                </methods>
+            </class>
+            <class name="Test_cases.HomePage_test">
+                <methods>
+                    <include name="clickoncontact"/>
+                    <include name="clickondeals"/>
+                    <include name="clickontasks"/>
+                </methods>
+            </class>
+            <class name="Test_cases.Contactspage_test">
+            <methods>
+                <include name="addcontact"/>
+            </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+
